@@ -1,0 +1,46 @@
+current directory: /Users/thaminduliyanage/Workspaces/ruby-sites/project-01/scheduled_tweets/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/thaminduliyanage/.rbenv/versions/2.7.2/bin/ruby -I /Users/thaminduliyanage/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20241002-63777-yu8j1b.rb extconf.rb
+creating Makefile
+
+current directory: /Users/thaminduliyanage/Workspaces/ruby-sites/project-01/scheduled_tweets/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/thaminduliyanage/Workspaces/ruby-sites/project-01/scheduled_tweets/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+cruby.c:74:17: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/thaminduliyanage/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1847:23: note: expanded from macro 'rb_intern'
+ 1847 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                       ^
+cruby.c:74:17: note: '{' token is here
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/thaminduliyanage/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+ 1847 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/thaminduliyanage/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1832:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+ 1832 |     {                                                   \
+      |     ^
+cruby.c:74:17: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/thaminduliyanage/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1847:24: note: expanded from macro 'rb_intern'
+ 1847 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/thaminduliyanage/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1837:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+ 1837 |     }
+      |     ^
+cruby.c:74:17: note: ')' token is here
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/thaminduliyanage/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1847:56: note: expanded from macro 'rb_intern'
+ 1847 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                                                        ^
+2 warnings generated.
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/thaminduliyanage/Workspaces/ruby-sites/project-01/scheduled_tweets/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20241002-63777-jbcwop/skiptrace/internal
